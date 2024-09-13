@@ -15,6 +15,7 @@
 body{
   width: 100%;
   height: 100vh;
+  background-color: #F7F7F7;
 }
 
 .wrapper{
@@ -157,4 +158,133 @@ body{
   .media__icon{
     margin-right: 0px;
   }
+}
+
+.items-wrap {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 36px;
+}
+
+.items {
+  flex-shrink: 0;
+  display: flex;
+  gap: 36px;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.item {
+  position: relative;
+  background: #ccc;
+  flex: 0 0 auto;
+  width: 356px;
+  height: 228px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.marquee {
+  animation: scroll 50s linear infinite;
+}
+
+.items-wrap:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.shop-now{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 50px;
+  color: #FFFFFF;
+  background-color: #7FAD39;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.nuts .image{
+  background-image: url(../images/backgrounds/nuts.png);
+  background-size: 356px 228px;
+}
+
+.vegetables .image{
+  background-image: url(../images/backgrounds/vegetables.png);
+  background-size: 356px 228px;
+}
+
+.fruit .image{
+  background-image: url(../images/backgrounds/fruit.png);
+  background-size: 356px 228px;
+}
+
+.eggs .image{
+  background-image: url(../images/backgrounds/eggs.png);
+  background-size: 356px 228px;
+}
+
+.beverage .image{
+  background-image: url(../images/backgrounds/beverage.png);
+  background-size: 356px 228px;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  position: absolute;
+  top: 20px;
+  left: 6px;
+  width: 186px;
+  height: 61px;
+  padding: 19px 20px;
+  background-color: #FFFFFF;
+}
+
+.text__sale{
+  color: #7FAD39;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+
+}
+
+.text__more{
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.text__name{
+  font-weight: 500;
+  font-size: 14px;
+  color: #999999;
 }

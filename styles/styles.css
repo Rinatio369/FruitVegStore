@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "CerebriSansPro"; 
+  src: url("../fonts/CerebriSansPro-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "CerebriSansPro";
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.grey{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #2A2A2A;
+  color: #FFFFFF;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 11px 0px 12px 0px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+
+}
+
+.split{
+  margin: 0px 17px;
+  width: 1px;
+  height: 14px;
+  background-color: white;
+}
+
+.media{
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px 0px;
+}
+
+.mail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mail__icon{
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/email.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 6px;
+}
+
+.media__icon{
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.free{
+  width: 182px;
+}
+
+.facebook{
+  background-image: url(../images/icons/facebook.svg);
+}
+
+.whatsapp{
+  background-image: url(../images/icons/whatsapp.svg);
+}
+
+.in{
+  background-image: url(../images/icons/in.svg);
+}
+
+.twitter{
+  background-image: url(../images/icons/twitter.svg);
+  margin-right: 0px;
+}
+
+@media(max-width: 768px) {
+  .split{
+    margin: 0px 4px;
+  }
+
+  .media{
+    margin-left: 4px;
+  }
+  .media__icon{
+    margin-right: 4px;
+  }
+}
+
+@media(max-width: 425px) {
+  .info{
+    width: 318px;
+    flex-wrap: wrap;
+  }
+
+  .mail{
+    order: 2;
+  }
+
+  .free{
+    width: 150px;
+    order: 4;
+  }
+
+  .split{
+    margin: 0px 10px;
+    order: 3;
+  }
+
+  .media{
+    width: 200px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    order: 1;
+  }
+
+  .media__icon{
+    margin-right: 0px;
+  }
+}

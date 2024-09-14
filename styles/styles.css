@@ -12,6 +12,16 @@
   font-family: "CerebriSansPro";
 }
 
+ol, ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+select{
+  border: none;
+  outline: none;
+}
+
 body{
   width: 100%;
   height: 100vh;
@@ -150,7 +160,8 @@ body{
 
   .media{
     width: 200px;
-    margin-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
     justify-content: space-between;
     order: 1;
   }
@@ -158,6 +169,105 @@ body{
   .media__icon{
     margin-right: 0px;
   }
+}
+
+/*BAR*/
+
+.bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px #CECECE;
+  padding: 25px 367px 25px 374px;
+
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-right: 38px;
+}
+
+.logo__text{
+  font-family: 'Inter';
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  color: #2A2A2A;
+  text-transform: uppercase;
+}
+
+.logo__image{
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/backgrounds/logo.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
+}
+
+.select__city{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.select__image{
+  width: 10px;
+  height: 14px;
+  background-image: url(../images/icons/city.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 14px;
+  background-position: center;
+  margin: 5px 7px;
+}
+
+.city{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #999999;
+  border: none;
+  cursor: pointer;
+}
+
+.search__wrapper{
+  margin-left: 26px;
+}
+
+.search{
+  width: 360px;
+  box-sizing: border-box;
+  background: #F7F7F7;
+  border: none;
+  outline: 0;
+  border-radius: 3px;
+  padding: 6px 10px 6px 43px;
+  background-image: url(../images/icons/search.svg);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #999999;
+
+
+
+}
+
+
+/*AD*/
+
+.string{
+  margin-top: 30px;
 }
 
 .items-wrap {
@@ -194,7 +304,7 @@ body{
 }
 
 .marquee {
-  animation: scroll 50s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .items-wrap:hover .marquee {
@@ -206,7 +316,7 @@ body{
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-100% - 20px));
+    transform: translateX(calc(-100% - 36px));
   }
 }
 
@@ -265,7 +375,6 @@ body{
   top: 20px;
   left: 6px;
   width: 186px;
-  height: 61px;
   padding: 19px 20px;
   background-color: #FFFFFF;
 }

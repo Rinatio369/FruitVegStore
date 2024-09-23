@@ -12,6 +12,11 @@
   font-family: "CerebriSansPro";
 }
 
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+
 ol, ul {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -484,7 +489,7 @@ body{
 
 @media(max-width: 375px) {
   .bar{
-    padding: 0px 5px;
+    padding: 0px 20px;
     flex-wrap: wrap;
   }
 }
@@ -512,7 +517,7 @@ body{
   min-width: 100%;
 }
 
-.item {
+.string-item {
   position: relative;
   background: #ccc;
   flex: 0 0 auto;
@@ -622,4 +627,175 @@ body{
   font-weight: 500;
   font-size: 14px;
   color: #999999;
+}
+
+.category{
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head__small-text, .head__big-text{
+  display: block;
+  width: 1200px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.head__small-text{
+  font-size: 14px;
+  color: #7FAD39;
+}
+
+.head__big-text{
+  margin-bottom: 30px;
+}
+
+
+#myCarousel{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 228px;
+}
+
+.carousel-inner{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    margin: auto;
+}
+
+.arousel-control{
+  width: 0%;
+}
+
+.block-list{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.block-item{
+  width: 134px;
+  height: 89px;
+  padding: 18px 22px 20px 22px;
+  box-sizing: content-box;
+  background: #FFFFFF;
+  border: 0.5px solid rgba(42, 42, 42, 0.15);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
+}
+
+.block-item a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-text{
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 16px;
+  line-height: 30px;
+  color: #2A2A2A;
+}
+
+.block-veg{
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons/veg.svg);
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.block-gro{
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons/shopping-cart.svg);
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.block-dai{
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons/milk.svg);
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.block-sna{
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons/snack.svg);
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.block-bev{
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons/groceries.svg);
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.block-home{
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/icons/house.svg);
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.category__right{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  background: #FFFFFF;
+  border: 2px solid #E6E6E6;
+  border-radius: 100%;
+  font-size: 10px;
+  outline: none;
+  color: #000000;
+}
+
+.category__right-one{
+  top: 50px;
+  left: 0px;
+}
+
+.category__right-two{
+  top: 50px;
+  right: 0px;
+  
+}
+
+.category__right:hover(){
+  color: #2A2A2A;
 }

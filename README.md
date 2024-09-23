@@ -1,2 +1,0 @@
-# FruitVegStore
-Test
